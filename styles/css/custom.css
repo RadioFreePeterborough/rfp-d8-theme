@@ -1,0 +1,64 @@
+/**
+ * Custom CSS
+ * Use this file to override styles if you feel uncomfortable editing
+ * component stylesheets.
+ ============================================================================ */
+@import url(//fonts.googleapis.com/css?family=EB+Garamond);
+@import url(//fonts.googleapis.com/css?family=Lato);
+
+
+
+BODY.path-frontpage UL.menu-name--main LI:first-of-type { display: none !important; } 
+BODY UL.menu-name--main LI A, BODY UL.menu-name--main LI A:visited {
+    color: #97968f;    
+
+}
+
+BODY UL.menu-name--main LI A:hover {
+    font-weight: bold;
+    color: #525048;
+}
+
+BODY .page, BODY { 
+    background: #fff url( '/themes/rfp_v_/images/bg.jpg' ); 
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif; 
+
+} 
+
+.attribution  { display: none !important; }
+.pr-header, .pr-header, .regions, .region, .l-r, DIV.l-rw { background: none !important; }
+.block-id--block-rfp-v-main-menu { background: none !important; }
+
+#main-content .regions { background: none !important; }
+
+.node { 
+    min-height: 40vh !important;  
+    background: rgba( 255,255, 255, 0.85);  
+    font-family: 'Lato', sans-serif; 
+    
+  }
+
+.node H1.node__title { font-family: 'Lato'; } 
+
+.pr-header__header-first { float: right; }
+
+.site-branding__logo-img { width: 60%;  float: right;  } 
+
+.l-rw { max-width: 83% !important; } 
+
+/* Main NAv Menu */
+UL.menu-name--main LI {
+    
+   margin-left: 2vw !important;
+   margin-right: 2vw !important;
+}
+
+UL.menu-name--main LI:first-of-type {
+ 
+    margin-left: 0 !important; 
+}
+
+BODY.path-frontpage UL.menu-name--main LI:nth-of-type( 2 ) {
+      margin-left: 0 !important; 
+}

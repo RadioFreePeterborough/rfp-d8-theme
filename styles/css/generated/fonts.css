@@ -1,0 +1,5 @@
+body { font-family: EB Garamond, sans-serif; font-size: 13px; font-size: 0.813rem; line-height: 20px; line-height: 1.219rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node__title, .page__title, .user__title { font-family: EB Garamond, sans-serif; font-size: 24px; font-size: 1.5rem; line-height: 24px; line-height: 1.5rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node--view-mode-full .node__title, .node--view-mode-full .node__title a { font-family: EB Garamond, sans-serif; font-size: 22px; font-size: 1.375rem; line-height: 33px; line-height: 2.063rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node--view-mode-teaser .node__title, .node--view-mode-teaser .node__title-link { font-family: EB Garamond, sans-serif; font-size: 22px; font-size: 1.375rem; line-height: 33px; line-height: 2.063rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+a { font-family: Lato, sans-serif; font-size: 18px; font-size: 1.125rem; line-height: 27px; line-height: 1.688rem; }
