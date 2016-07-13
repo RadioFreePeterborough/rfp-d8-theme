@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');i
+
+/* @import url('https://fonts.googleapis.com/css?family=EB Garamond'); */
+
 /**
  * Custom CSS
  * Use this file to override styles if you feel uncomfortable editing
  * component stylesheets.
  ============================================================================ */
-@import url(//fonts.googleapis.com/css?family=EB+Garamond);
-@import url(//fonts.googleapis.com/css?family=Lato);
 
 
 
@@ -52,8 +54,119 @@ UL.menu-name--main LI {
     
    margin-left: 2vw !important;
    margin-right: 2vw !important;
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 }
 
+
+BODY.path-frontpage ARTICLE { min-height:400px !important; margin-top: -50px; padding-top: 20px;  }
+
+
+/* Queue */
+#rfp-queue {
+ 
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width : 400px;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  padding-left: 0;
+  padding-top: 10px;
+  background: rgba( 255, 255, 255, 1 );
+  vertical-align: bottom;   
+  display: none;
+  z-index: 1000;
+  box-shadow: -2px -2px 2px rgba( 50, 50, 50, 0.45 );		
+  overflow: scroll;	
+}
+
+#rfp-queue-grippie {
+	
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 6px;
+	background: #525048 !important;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+
+
+UL.rfp-queue-tracks { margin: 0 !important; padding: 0 !important; width: 100%;  }
+
+/*  A track in the queue */
+LI.rfp-queue-track {  
+
+  list-style: none;  
+  width: 100%;
+  margin: 0 !important;  
+  margin-top: 5px;
+  margin-bottom: 0px !important;
+  padding: 0; 
+  border-bottom: solid thin rgba( 50, 50, 50, 0.45 );
+}
+
+ LI.rfp-queue-track:nth-of-type(1) { /* We need to make room for the close button */  
+
+  margin-top: 20px !important; 
+}
+
+
+#rfp-queue UI { list-style: none !important;  margin: 0 !important; padding: 0 !important;  }
+#queue-track-details { float: right; width: 250px;  }
+.queue-details {
+
+  font-family: 'Lato', sans-serif; 
+}
+
+/* details for elements in the queue */
+.rfp-track-title H3 { 
+
+  font-size: 1.3em;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: bold;
+
+}
+
+.rfp-recording-title H3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.14em;
+}
+
+.rfp-track-artist {
+  font-size: 1em;
+  position: relative;
+  bottom: 0;
+}
+
+IMG.queue-thumb { 
+	width: 110px;
+	height: 110px;
+	margin: 5px !important;
+	margin-left: 15px !important;
+    border: solid thin #ccc;
+}
+
+A#queue-toggle {  position: fixed; top: 0;	right: 0; color: red; }
+
+/* The version of the toggle button that is inside the queue... */
+A.rfp-in-queue-toggle { position: relative; left: 0; top: 0; }
+
+.queue-current-track { 
+
+	background: yellow !important;
+	
+}
+
+
+/*
 UL.menu-name--main LI:first-of-type {
  
     margin-left: 0 !important; 
@@ -62,3 +175,35 @@ UL.menu-name--main LI:first-of-type {
 BODY.path-frontpage UL.menu-name--main LI:nth-of-type( 2 ) {
       margin-left: 0 !important; 
 }
+
+*/
+
+
+
+
+
+/* Player Styles */
+#rfp-recording-cover {  float: left;  width: 35%; }
+#rfp-recording-cover IMG { 
+	max-width: 90%;  
+	box-shadow: 4px 4px 6px rgba( 50, 50, 50, 0.45 );
+	border: solid thin #333;
+} 
+
+#rfp-track-details { float: left; width: 65%; } 
+#rfp-buttonbar { text-align: center; position: absolute; bottom: 5px; left: 0; right: 0; width: 100%; height: 100px; background: #fff; padding-top: 25px;  }
+#rfp-buttonbar A { margin-left: 10px; margin-right: 10px; }
+
+#rfp-buttonbar .play-pause IMG { width: 50px; height: 50px; vertical-align: middle;    }
+#rfp-buttonbar .next-prev  IMG { width: 20px; height: 20px; vertical-align: middle;    }
+
+
+#rfp-buttonbar .next-prev { margin: 0 100px 0 100px; }
+
+.disabled {  cursor:  default !important; }  /* just used by javascript */ 
+
+
+
+
+
+

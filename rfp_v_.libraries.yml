@@ -4,6 +4,9 @@ base:
   css:
     base:
       styles/css/components/base.css: {}
+  js: 
+      js/rfp.js: {}
+
 
 # Aggregator
 aggregator:
