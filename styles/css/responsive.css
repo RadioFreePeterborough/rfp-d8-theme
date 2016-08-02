@@ -1,0 +1,68 @@
+/*
+0-519 pixels: Most all phones in portrait mode will see the narrowest layout, and this can be a fluid-width layout to accomodate exact screen widths. Iphone landscape will still see this narrowest design.
+520-959 pixels: Some newer Android phones with big screens and large resolutions will see the middle layout in portrait orientation, as will Kindle Fire, iPad, and most Android tablets in portrait. Most Android phones in landscape orientation will also see this layout.
+960+ pixels: Newer big screen Android phones, Kindle Fire, iPad, and most Android tablets in landscape orientation will see the full width layout. This is also the layout that desktops will see.
+*/
+
+
+/* Phones in portrait mode */
+
+@media only screen and (max-width:519px) {
+
+BODY {  max-width: 320px !important; padding: 0 !important; }
+.site-branding__logo-img { width: 70% !important;  float: left !important;  }
+
+
+#rfp-wrapper #rfp-recording-cover IMG { max-width: 160px !important; max-height: 160px !important; clear: both; }
+
+.node { height: auto !important; min-height: 150px !important;  width: 90% !important;  }
+
+#rfp-track-details { clear: both; width: auto; } 
+
+#rfp-queue, #rfp-search, #rfp-ukulele, #rfp-info {
+	  max-width: 90% !important;
+	  height: auto;
+	  margin: 0;
+}
+
+/* Icons */
+
+#queue-toggle IMG, #search-toggle IMG, #info-toggle IMG { width: 30px !important; height: 30px !important; right: 15px !important; }
+
+#search-toggle { top: 50px !important; }
+#info-toggle { top: 105px !important; right: 5px !important;  }
+
+#uke-toggle IMG  {  width: 30px !important; height: 50px !important;  }
+#uke-toggle { top: 160px !important; right: 5px !important; }
+
+#rfp-search #search-toggle, #rfp-info #info-toggle, #rfp-ukulele #uke-toggle   { top: 0 !important; } 
+#rfp-ukulele #uke-toggle IMG { width: 30px !important; height: 30px !important; }
+
+#rfp-search-for, #rfp-search-keywords, #rfp-search-submit {
+
+  font-size: 1.5em !important;
+  padding-left: 1% !important;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width:520px) and (max-width:959px) {
+
+
+}
+
+@media only screen and  (min-width:959px) {
+
+
+}
+
+
+
+
+

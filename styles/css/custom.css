@@ -1,32 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');i
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /* @import url('https://fonts.googleapis.com/css?family=EB Garamond'); */
 
-/**
- * Custom CSS
- * Use this file to override styles if you feel uncomfortable editing
- * component stylesheets.
- ============================================================================ */
 
+BODY.path-frontpage UL.menu-name--main LI:first-of-type { display: none !important; }
+BODY UL.menu-name--main LI A, BODY UL.menu-name--main LI A:visited { color: #97968f; }
+BODY UL.menu-name--main LI A:hover { font-weight: bold; color: #525048; }
 
-
-BODY.path-frontpage UL.menu-name--main LI:first-of-type { display: none !important; } 
-BODY UL.menu-name--main LI A, BODY UL.menu-name--main LI A:visited {
-    color: #97968f;    
-
-}
-
-BODY UL.menu-name--main LI A:hover {
-    font-weight: bold;
-    color: #525048;
-}
-
-BODY .page, BODY { 
-    background: #fff url( '/themes/rfp_v_/images/bg.jpg' ); 
+BODY .page, BODY {
+    background: #fff url( '/themes/rfp_v_/images/bg.jpg' );
     background-repeat: no-repeat;
-    font-family: 'Lato', sans-serif; 
-
-} 
+    font-family: 'Lato', sans-serif;
+}
 
 .attribution  { display: none !important; }
 .pr-header, .pr-header, .regions, .region, .l-r, DIV.l-rw { background: none !important; }
@@ -34,36 +19,36 @@ BODY .page, BODY {
 
 #main-content .regions { background: none !important; }
 
-.node { 
-    min-height: 40vh !important;  
-    background: rgba( 255,255, 255, 0.85);  
-    font-family: 'Lato', sans-serif; 
-    
-  }
+.node {  min-height: 40vh !important;  background: rgba( 255,255, 255, 0.85);  font-family: 'Lato', sans-serif; }
 
-.node H1.node__title { font-family: 'Lato'; } 
+.node H1.node__title { font-family: 'Lato'; }
 
 .pr-header__header-first { float: right; }
 
-.site-branding__logo-img { width: 60%;  float: right;  } 
+.site-branding__logo-img { width: 60%;  float: right;  }
 
-.l-rw { max-width: 83% !important; } 
+.l-rw { max-width: 83% !important; }
 
-/* Main NAv Menu */
+/* Main Nav Menu */
 UL.menu-name--main LI {
-    
+
    margin-left: 2vw !important;
    margin-right: 2vw !important;
    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 }
 
 
-BODY.path-frontpage ARTICLE { min-height:400px !important; margin-top: -50px; padding-top: 20px;  }
+BODY.path-frontpage ARTICLE {
+  min-height:400px !important;
+  margin-top: -50px;
+  padding-top: 20px;
+
+}
 
 
 /* Queue */
-#rfp-queue {
- 
+#rfp-queue, #rfp-search, #rfp-ukulele, #rfp-info {
+
   position: fixed;
   right: 0;
   top: 0;
@@ -75,15 +60,38 @@ BODY.path-frontpage ARTICLE { min-height:400px !important; margin-top: -50px; pa
   padding-left: 0;
   padding-top: 10px;
   background: rgba( 255, 255, 255, 1 );
-  vertical-align: bottom;   
+  vertical-align: bottom;
   display: none;
-  z-index: 1000;
-  box-shadow: -2px -2px 2px rgba( 50, 50, 50, 0.45 );		
-  overflow: scroll;	
+  z-index: 10;
+  box-shadow: -2px -2px 2px rgba( 50, 50, 50, 0.45 );
+  overflow: scroll;
 }
 
+.rfp-recording-listen-icon {
+
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin-top: 70px;
+  opacity: 0.4;
+}
+
+A.rfp-recording-listen-icon:hover { opacity: 0.8; }
+
+
+
+/* RFP Uke is a text-only flyout - it needs some extra styling */
+#rfp-ukulele, #rfp-info { padding: 10px; }
+#rfp-ukulele A, #rfp-ukulele A:visited, , #rfp-info A, , #rfp-info A:visited  { font-size: 1.25em; font-weight: bold; color: #97968f;   }
+#rfp-ukulele A:hover, , #rfp-info A:hover { text-decoration: underline; },
+#rfp-ukulele A#uke-toggle, #rfp-info A#info-toggle  { position: relative !important;  left: -50px !important;  }
+
+#rfp-info A {font-size: 1em; }
+
+
 #rfp-queue-grippie {
-	
+
 	position: fixed;
 	bottom: 0;
 	top: 0;
@@ -96,57 +104,74 @@ BODY.path-frontpage ARTICLE { min-height:400px !important; margin-top: -50px; pa
 }
 
 
-
-UL.rfp-queue-tracks { margin: 0 !important; padding: 0 !important; width: 100%;  }
+UL.rfp-queue-tracks, UL.rfp-search-results { margin: 0 !important; padding: 0 !important; width: 100%;  }
 
 /*  A track in the queue */
-LI.rfp-queue-track {  
+LI.rfp-queue-track, LI.rfp-search-result {
 
-  list-style: none;  
+  list-style: none;
   width: 100%;
-  margin: 0 !important;  
+  margin: 0 !important;
   margin-top: 5px;
   margin-bottom: 0px !important;
-  padding: 0; 
+  padding: 0;
   border-bottom: solid thin rgba( 50, 50, 50, 0.45 );
+  cursor: pointer;
 }
 
- LI.rfp-queue-track:nth-of-type(1) { /* We need to make room for the close button */  
+ LI.rfp-queue-track:nth-of-type(1),  LI.rfp-search-result:nth-of-type(1) { /* We need to make room for the close button */
 
-  margin-top: 20px !important; 
+  margin-top: 20px !important;
 }
 
+/* And make some room at the bottom for the last queue item so we can see all of it */
+ LI.rfp-queue-track:last-of-type, LI.rfp-search-result:last-of-type { /* We need to make room for the close button */
 
-#rfp-queue UI { list-style: none !important;  margin: 0 !important; padding: 0 !important;  }
-#queue-track-details { float: right; width: 250px;  }
+  margin-bottom: 100px !important;
+}
+
+#rfp-queue UI, #rfp-search UI { list-style: none !important;  margin: 0 !important; padding: 0 !important;  }
+
+
+.rfp-search-result H2 { margin-left: 10px; cursor: pointer; padding: 10px 0 10px 0; }
+
+
+
+.queue-track-hover { background: rgba( 151, 150, 143, 0.15 ); }
+
+#queue-track-details { float: right; width: 240px;  }
 .queue-details {
-
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
 }
 
 /* details for elements in the queue */
-.rfp-track-title H3 { 
+.rfp-track-title H3 {
 
   font-size: 1.3em;
+  line-height: 1.2em;
   width: 100%;
   margin-bottom: 0;
   font-weight: bold;
+  margin-top: 0.75em;
 
 }
 
 .rfp-recording-title H3 {
-  margin-top: 10px;
+  margin-top: 0.6em;
   margin-bottom: 0;
-  font-size: 1.14em;
+  font-size: 1.24em;
+  line-height: 1.2em;
 }
 
-.rfp-track-artist {
-  font-size: 1em;
-  position: relative;
-  bottom: 0;
+.rfp-track-artist P  {
+
+  margin-top: 0.75em !important;
+  font-size: 0.85em;
+
 }
 
-IMG.queue-thumb { 
+IMG.queue-thumb {
 	width: 110px;
 	height: 110px;
 	margin: 5px !important;
@@ -154,44 +179,168 @@ IMG.queue-thumb {
     border: solid thin #ccc;
 }
 
-A#queue-toggle {  position: fixed; top: 0;	right: 0; color: red; }
+A#queue-toggle {  position: fixed; top: 0;	right: 0;  opacity: 0.4; }
+A#queue-toggle:hover, A#search-toggle:hover,  A#uke-toggle:hover { opacity: 0.8; }
 
-/* The version of the toggle button that is inside the queue... */
+A#search-toggle {  position: fixed; top: 70px;	right: 0;  opacity: 0.4; }
+
+A#uke-toggle { position: fixed; top: 245px; right: 0; opacity: 0.4; }
+
+A#info-toggle { position: fixed; top: 165px; right: 10px; opacity: 0.4; }
+
+/* The version of the toggle button that is inside the queue or search box... */
 A.rfp-in-queue-toggle { position: relative; left: 0; top: 0; }
+A.rfp-in-search-toggle { position: relative; left: 0; top: -10px; }
 
-.queue-current-track { 
 
-	background: yellow !important;
-	
+
+.queue-current-track {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#686763+0,7db9e8+100&0.7+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(104,103,99,0.7) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(104,103,99,0.7) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(104,103,99,0.7) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3686763', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+.search-title {
+  position: relative;
+  float: right;
+  top: 0;
+  right: 0.4em;
+  font-family: 'Lato', sans-serif;
+  color: #525048;
+  font-size: 2.5em;
+}
+
+/* The div that holds the 'search by..' select */
+.search-by-div { margin-top: 2em; }
+.search-by-div SELECT {
+
+
+  background: #525048;
+  color: #fff;
+
+  width: 95%;
+  margin-left: 3%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  height: 2em;
+}
+
+SELECT#rfp-search-for OPTION  { padding-left: 50px !important; }
+
+#rfp-search-for { padding-left: 15.5%; }
+
+#rfp-search-keywords, #rfp-search-submit {
+
+  width: 95%;
+  margin-left: 3%;
+  padding-left: 3%;
+  margin-top: 1.5%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  height: 2em;
+  cursor: pointer;
 }
 
 
-/*
-UL.menu-name--main LI:first-of-type {
- 
-    margin-left: 0 !important; 
+
+
+.search-label {
+
+  margin-left: 3%;
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  font-size: 1.45em;
+  font-weight: bold;
 }
 
-BODY.path-frontpage UL.menu-name--main LI:nth-of-type( 2 ) {
-      margin-left: 0 !important; 
+#rfp-search-submit {
+
+  margin-top: 5%;
+  background-color: #525048;
+  color: #fff;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 2.6em;
 }
 
-*/
+/* #rfp-wrapper { position: absolute;  } */
 
+.like-wrapper {
+
+  margin-top: 40px;
+
+ }
+
+.rfp-search-result { display: block; height: 125px;  }
+
+.rfp-search-result-thumb {
+	width: 100px;
+  height: 100px;
+	cursor: pointer;
+	box-shadow: 4px 4px 6px rgba( 50, 50, 50, 0.45 );
+	border: solid thin #333;
+	margin: 10px;
+	margin-right: 20px;
+	float: left;
+  clear: both;
+}
+
+.rfp-search-result-title {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.rfp-search-result-subtitle {
+  font-size: 1em;
+  line-height: 1.1em;
+  margin: 0;
+  padding: 0;
+
+
+}
 
 
 
 
 /* Player Styles */
 #rfp-recording-cover {  float: left;  width: 35%; }
-#rfp-recording-cover IMG { 
-	max-width: 90%;  
+#rfp-recording-cover IMG {
+	max-width: 90%;
 	box-shadow: 4px 4px 6px rgba( 50, 50, 50, 0.45 );
 	border: solid thin #333;
-} 
+}
 
-#rfp-track-details { float: left; width: 65%; } 
-#rfp-buttonbar { text-align: center; position: absolute; bottom: 5px; left: 0; right: 0; width: 100%; height: 100px; background: #fff; padding-top: 25px;  }
+#rfp-track-title { font-size: 3em;
+
+
+
+
+}
+
+
+#rfp-track-details { float: left; width: 65%; }
+
+
+#rfp-buttonbar {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  padding-top: 25px;
+  z-index: 1000;
+  box-shadow: -2px -2px 4px rgba( 50, 50, 50, 0.45 );
+
+}
 #rfp-buttonbar A { margin-left: 10px; margin-right: 10px; }
 
 #rfp-buttonbar .play-pause IMG { width: 50px; height: 50px; vertical-align: middle;    }
@@ -200,10 +349,4 @@ BODY.path-frontpage UL.menu-name--main LI:nth-of-type( 2 ) {
 
 #rfp-buttonbar .next-prev { margin: 0 100px 0 100px; }
 
-.disabled {  cursor:  default !important; }  /* just used by javascript */ 
-
-
-
-
-
-
+.disabled {  cursor:  default !important; }  /* just used by javascript */
