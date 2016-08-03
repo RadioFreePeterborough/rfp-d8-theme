@@ -9,40 +9,92 @@
 
 @media only screen and (max-width:519px) {
 
-BODY {  max-width: 320px !important; padding: 0 !important; }
+BODY {  padding: 0 !important; }
+
+#rfp-wrapper #rfp-recording-cover { min-width: 110% !important;  max-height: 100%; }
+#rfp-wrapper #rfp-recording-cover IMG,  { max-width: 100% !important; max-height: 100% !important; clear: both; }
+
+.node { height: auto !important; min-height: 150px !important;  width: 95% !important;  padding-bottom: 200px;  }
 .site-branding__logo-img { width: 70% !important;  float: left !important;  }
 
 
-#rfp-wrapper #rfp-recording-cover IMG { max-width: 160px !important; max-height: 160px !important; clear: both; }
+#rfp-track-details { clear: both; width: auto;  margin-top: 10px; }
 
-.node { height: auto !important; min-height: 150px !important;  width: 90% !important;  }
+H1#rfp-track-title {
+	font-size: 1.6em !important;
+	clear: both;
+	width: 145% !important;
+	line-height: 1.25em;
+	margin: 0 0 10px 0  !important;
+}
 
-#rfp-track-details { clear: both; width: auto; } 
+H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name { 
+  
+	font-size: 0.55em !important;
+	line-height: 1.15em !important;
+	width: 140%;
+	float: left;
+    margin-top: 1em;
+    padding: 0;
+   
+  
+}
+
+#dash { display: none; }
 
 #rfp-queue, #rfp-search, #rfp-ukulele, #rfp-info {
 	  max-width: 90% !important;
+	  padding-bottom: 150px !important;
 	  height: auto;
 	  margin: 0;
 }
 
-/* Icons */
+/* Queue items */
+.rfp-queue-track IMG.queue-thumb { width: 60px !important; height: 60px !important; }
 
+.rfp-queue-track #queue-track-details { 
+  max-width: 190px; 
+  max-height: 90px !important; 
+  overflow: hidden; 
+  padding-top: 0;
+  
+  
+  
+}
+
+.rfp-queue-track #queue-track-details .rfp-track-title H3 { font-size: 0.9em !important; line-height: 1em !important; }
+.rfp-queue-track #queue-track-details .rfp-recording-title H3 { font-size: 0.8em !important; line-height: 0.8em !important; }
+
+.rfp-search-result H2 { max-height: 90px;  font-size: 1em !important; line-height: 1.35em !important; padding: 0; }
+.rfp-search-result { height: auto !important; }
+
+
+
+/* Icons */
 #queue-toggle IMG, #search-toggle IMG, #info-toggle IMG { width: 30px !important; height: 30px !important; right: 15px !important; }
 
 #search-toggle { top: 50px !important; }
 #info-toggle { top: 105px !important; right: 5px !important;  }
 
-#uke-toggle IMG  {  width: 30px !important; height: 50px !important;  }
+#uke-toggle IMG  {  width: 30px !important; height: 40px !important;  }
 #uke-toggle { top: 160px !important; right: 5px !important; }
 
-#rfp-search #search-toggle, #rfp-info #info-toggle, #rfp-ukulele #uke-toggle   { top: 0 !important; } 
+#rfp-search #search-toggle, #rfp-info #info-toggle, #rfp-ukulele #uke-toggle   { top: 0 !important; }
 #rfp-ukulele #uke-toggle IMG { width: 30px !important; height: 30px !important; }
 
-#rfp-search-for, #rfp-search-keywords, #rfp-search-submit {
+#rfp-search-for, #rfp-search-keywords,
+#rfp-search-submit { font-size: 1.5em !important; padding-left: 1% !important; }
 
-  font-size: 1.5em !important;
-  padding-left: 1% !important;
-}
+.rfp-recording-listen-icon { margin-top: 20px !important; }
+
+#rfp-buttonbar A { margin-left: 20px; margin-right: 20px; }
+
+#rfp-buttonbar .play-pause IMG { width: 50px; height: 50px; vertical-align: middle;    }
+#rfp-buttonbar .next-prev  IMG { width: 20px; height: 20px; vertical-align: middle;    }
+
+
+#rfp-buttonbar .next-prev { margin: 0 40px 0 40px !important; }
+
 
 
 
@@ -61,8 +113,3 @@ BODY {  max-width: 320px !important; padding: 0 !important; }
 
 
 }
-
-
-
-
-
