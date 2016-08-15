@@ -28,16 +28,16 @@ H1#rfp-track-title {
 	margin: 0 0 10px 0  !important;
 }
 
-H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name { 
-  
+H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name {
+
 	font-size: 0.55em !important;
 	line-height: 1.15em !important;
 	width: 140%;
 	float: left;
     margin-top: 1em;
     padding: 0;
-   
-  
+
+
 }
 
 #dash { display: none; }
@@ -52,21 +52,21 @@ H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name {
 /* Queue items */
 .rfp-queue-track IMG.queue-thumb { width: 60px !important; height: 60px !important; }
 
-.rfp-queue-track #queue-track-details { 
-  max-width: 190px; 
-  max-height: 90px !important; 
-  overflow: hidden; 
+.rfp-queue-track #queue-track-details {
+  max-width: 190px;
+  max-height: 90px !important;
+  overflow: hidden;
   padding-top: 0;
-  
-  
-  
+
+
+
 }
 
 .rfp-queue-track #queue-track-details .rfp-track-title H3 { font-size: 0.9em !important; line-height: 1em !important; }
 .rfp-queue-track #queue-track-details .rfp-recording-title H3 { font-size: 0.8em !important; line-height: 0.8em !important; }
 
-.rfp-search-result H2 { max-height: 90px;  font-size: 1em !important; line-height: 1.35em !important; padding: 0; }
-.rfp-search-result { height: auto !important; }
+.rfp-search-result H2 { max-height: 160px;  font-size: 1em !important; line-height: 1.35em !important; padding: 0; }
+.rfp-search-result { height: 150px !important; }
 
 
 
@@ -78,6 +78,8 @@ H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name {
 
 #uke-toggle IMG  {  width: 30px !important; height: 40px !important;  }
 #uke-toggle { top: 160px !important; right: 5px !important; }
+
+#rfp-apps { top: 232px !important; right: 2px !important; }
 
 #rfp-search #search-toggle, #rfp-info #info-toggle, #rfp-ukulele #uke-toggle   { top: 0 !important; }
 #rfp-ukulele #uke-toggle IMG { width: 30px !important; height: 30px !important; }
@@ -93,7 +95,7 @@ H2 SPAN#rfp-track-recording-name, H2 SPAN#rfp-track-artist-name {
 #rfp-buttonbar .next-prev  IMG { width: 20px; height: 20px; vertical-align: middle;    }
 
 
-#rfp-buttonbar .next-prev { margin: 0 40px 0 40px !important; }
+#rfp-buttonbar .next-prev { margin: 0 10px 0 10px !important; padding: 0 30px 0 30px !important; }
 
 
 
